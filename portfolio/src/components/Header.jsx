@@ -1,4 +1,4 @@
-import { Row, Col, Image, Button, Collapse } from 'react-bootstrap';
+import { Row, Col, Image, Button } from 'react-bootstrap';
 import {
  FaTwitter,
  FaFacebook,
@@ -13,10 +13,11 @@ import {
 const Header = () => {
  return (
   <header>
-   <Row className='nodutters'>
+   <Row className='g-0'>
     <Col lg={4} md={5}>
      <Image src='assets/portrait.jpg' className='img' alt='image' />
     </Col>
+
     <Col lg={8} md={7}>
      <div className='d-flex flex-column'>
       <div className='p-5 bg-dark text-white'>
@@ -50,43 +51,43 @@ const Header = () => {
       <div>
        <div className='d-flex flex-row text-white align-items-stretch text-center'>
         <Button
-         className='port-item p-4 bg-primary'
+         className='port-item p-4 bg-primary d-flex flex-column justify-content-center align-items-center'
          variant='primary'
          data-toggle='collapse'
          data-target='#home'
          aria-expanded='false'
          aria-controls='home'>
-         <FaHome size={115} className='d-block' />
+         <FaHome size={70} className='d-block' />
          <span className='d-none d-sm-block'>Home</span>
         </Button>
 
         <Button
-         className='port-item p-4 bg-success'
+         className='port-item p-4 bg-success d-flex flex-column justify-content-center align-items-center'
          data-toggle='collapse'
          data-target='#resume'
          aria-expanded='false'
          aria-controls='resume'>
-         <FaGraduationCap size={115} className='d-block' />
+         <FaGraduationCap size={70} className='d-block' />
          <span className='d-none d-sm-block'>Resume</span>
         </Button>
 
         <Button
-         className='port-item p-4 bg-warning'
+         className='port-item p-4 bg-warning d-flex flex-column justify-content-center align-items-center'
          data-toggle='collapse'
          data-target='#work'
          aria-expanded='false'
          aria-controls='work'>
-         <FaFolderOpen size={115} className='d-block' />
+         <FaFolderOpen size={70} className='d-block' />
          <span className='d-none d-sm-block'>Work</span>
         </Button>
 
         <Button
-         className='port-item p-4 bg-danger'
+         className='port-item p-4 bg-danger d-flex flex-column justify-content-center align-items-center'
          data-toggle='collapse'
          data-target='#contact'
          aria-expanded='false'
          aria-controls='contact'>
-         <FaEnvelope size={115} className='d-block' />
+         <FaEnvelope size={70} className='d-block' />
          <span className='d-none d-sm-block'>Contact</span>
         </Button>
        </div>
