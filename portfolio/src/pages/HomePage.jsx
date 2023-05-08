@@ -1,11 +1,16 @@
 import { Container } from 'react-bootstrap';
 import Header from '../components/Header';
+import Home from '../components/Home';
+import Resume from '../components/Resume';
+import Work from '../components/Work';
 
 const HomePage = () => {
  return (
   <Container>
    <Header />
-   <h1>Welcome To My Portfolio</h1>
+   <Work />
+   {/* <Resume /> */}
+   {/* <Home /> */}
   </Container>
  );
 };

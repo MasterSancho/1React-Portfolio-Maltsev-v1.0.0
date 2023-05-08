@@ -56,7 +56,7 @@ const Header = () => {
          data-target='#home'
          aria-expanded='false'
          aria-controls='home'>
-         <FaHome size={120} className='d-block' />
+         <FaHome size={115} className='d-block' />
          <span className='d-none d-sm-block'>Home</span>
         </Button>
 
@@ -66,7 +66,7 @@ const Header = () => {
          data-target='#resume'
          aria-expanded='false'
          aria-controls='resume'>
-         <FaGraduationCap size={120} className='d-block' />
+         <FaGraduationCap size={115} className='d-block' />
          <span className='d-none d-sm-block'>Resume</span>
         </Button>
 
@@ -76,7 +76,7 @@ const Header = () => {
          data-target='#work'
          aria-expanded='false'
          aria-controls='work'>
-         <FaFolderOpen size={120} className='d-block'></FaFolderOpen>
+         <FaFolderOpen size={115} className='d-block' />
          <span className='d-none d-sm-block'>Work</span>
         </Button>
 
@@ -86,7 +86,7 @@ const Header = () => {
          data-target='#contact'
          aria-expanded='false'
          aria-controls='contact'>
-         <FaEnvelope size={120} className='d-block'></FaEnvelope>
+         <FaEnvelope size={115} className='d-block' />
          <span className='d-none d-sm-block'>Contact</span>
         </Button>
        </div>
