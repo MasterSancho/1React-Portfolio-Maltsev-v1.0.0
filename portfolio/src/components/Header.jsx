@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import { Row, Col, Image, Button } from 'react-bootstrap';
 import {
  FaTwitter,
@@ -11,6 +12,8 @@ import {
 } from 'react-icons/fa';
 
 const Header = () => {
+ const navigate = useNavigate();
+
  return (
   <header>
    <Row className='g-0'>
@@ -51,43 +54,31 @@ const Header = () => {
       <div>
        <div className='d-flex flex-row text-white align-items-stretch text-center'>
         <Button
-         className='port-item p-4 bg-primary d-flex flex-column justify-content-center align-items-center'
+         className='p-4 bg-primary d-flex flex-column justify-content-center align-items-center'
          variant='primary'
-         data-toggle='collapse'
-         data-target='#home'
-         aria-expanded='false'
-         aria-controls='home'>
-         <FaHome size={70} className='d-block' />
+         onClick={() => navigate('/')}>
+         <FaHome size={70} />
          <span className='d-none d-sm-block'>Home</span>
         </Button>
 
         <Button
-         className='port-item p-4 bg-success d-flex flex-column justify-content-center align-items-center'
-         data-toggle='collapse'
-         data-target='#resume'
-         aria-expanded='false'
-         aria-controls='resume'>
-         <FaGraduationCap size={70} className='d-block' />
+         className='p-4 bg-success d-flex flex-column justify-content-center align-items-center'
+         onClick={() => navigate('/resume')}>
+         <FaGraduationCap size={70} />
          <span className='d-none d-sm-block'>Resume</span>
         </Button>
 
         <Button
-         className='port-item p-4 bg-warning d-flex flex-column justify-content-center align-items-center'
-         data-toggle='collapse'
-         data-target='#work'
-         aria-expanded='false'
-         aria-controls='work'>
-         <FaFolderOpen size={70} className='d-block' />
+         className='p-4 bg-warning d-flex flex-column justify-content-center align-items-center'
+         onClick={() => navigate('/work')}>
+         <FaFolderOpen size={70} />
          <span className='d-none d-sm-block'>Work</span>
         </Button>
 
         <Button
-         className='port-item p-4 bg-danger d-flex flex-column justify-content-center align-items-center'
-         data-toggle='collapse'
-         data-target='#contact'
-         aria-expanded='false'
-         aria-controls='contact'>
-         <FaEnvelope size={70} className='d-block' />
+         className='p-4 bg-danger d-flex flex-column justify-content-center align-items-center'
+         onClick={() => navigate('/contact')}>
+         <FaEnvelope size={70} />
          <span className='d-none d-sm-block'>Contact</span>
         </Button>
        </div>
